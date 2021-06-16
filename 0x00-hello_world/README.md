@@ -1,0 +1,1 @@
+*This directory contains tasks involving basic C scripts*
