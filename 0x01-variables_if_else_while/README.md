@@ -1,0 +1,1 @@
+**This directory contains scripts on conditional logic in C programming**
