@@ -10,14 +10,20 @@
 int main(void)
 {
 int i;
-for (i = '0' ; i <= '9' ; i++)
+while(i = '0' ; i <= '9' ; i++)
 {
 putchar(i);
-if (i < 8)
-
-putchar(' ');
+if (i < 9)
+{
 putchar(',');
 putchar(' ');
+}
+else
+{
+break;
+}
+}
+putchar('\n');
 }
 return (0);
 }
