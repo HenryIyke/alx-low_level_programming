@@ -9,6 +9,7 @@
  */
 int main(void)
 {
+clrscr();
 int i;
 for (i = '0' ; i <= '9' ; i++)
 {
