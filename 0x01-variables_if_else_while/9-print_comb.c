@@ -14,14 +14,10 @@ for (i = '0' ; i <= '9' ; i++)
 {
 putchar(i);
 if (i < 9)
-{
+
+putchar(',');
+putchar(' ');
 putchar(',');
 }
-if (i < 9)
-{
-putchar(' ');
-}
-}
-putchar('\n');
 return (0);
 }
