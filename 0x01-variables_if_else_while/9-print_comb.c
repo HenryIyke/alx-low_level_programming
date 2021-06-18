@@ -10,22 +10,16 @@
 int main(void)
 {
 int i;
-while (i = '0' &&  i <= '9')
+ for (i = '0' ; i <= '9' ; i++)
 {
 putchar(i);
-i++;
  
-if (i < 9)
+if (i <'9')
 {
 putchar(',');
 putchar(' ');
 }
-else
-
-break;
-
 }
 putchar('\n');
-}
 return (0);
 }
