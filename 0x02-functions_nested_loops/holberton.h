@@ -1,4 +1,4 @@
 #ifndef HOLBERTON_H_INCLUDED
 #define HOLBERTON_H_INCLUDED
 
-int putchar(char);
+int _putchar(char);
