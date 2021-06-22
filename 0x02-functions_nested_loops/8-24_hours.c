@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for ALX School students.
+ * jack_bauer - check the code for ALX School students.
  *
  * Return: Always 0.
  */
@@ -13,7 +13,7 @@ int hour = 0;
 int minute = 0;
 int _23;
 int _59;
-while(hour <= 23)
+while (hour <= 23)
 {
 while (minute <= 59)
 {
@@ -30,4 +30,4 @@ _putchar('\n');
 hour++;
 minute = 0;
 }
-}  
+}
