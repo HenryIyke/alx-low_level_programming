@@ -17,4 +17,5 @@ t1 = t2;
 t2 = next_term;
 next_term = t1 + t2;
 }
+return (0);
 }
