@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "holberton.h"
+
+/**
+ * print_alphabet_x10 - Entry point for nested loop
+ *
+ * Return: Always 0.
+ */
+int print_alphabets_x10(void)
+{
+int i = 0;
+for (i = 0; i <= 10; i++)
+{
+int ch;
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+puchar(ch);
+}
+putchar('\n');
+}
+}
