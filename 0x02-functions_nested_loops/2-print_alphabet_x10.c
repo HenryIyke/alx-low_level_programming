@@ -14,8 +14,8 @@ for (i = 0; i <= 10; i++)
 int ch;
 for (ch = 'a'; ch <= 'z'; ch++)
 {
-puchar(ch);
+_puchar(ch);
 }
-putchar('\n');
+_putchar('\n');
 }
-}
+
