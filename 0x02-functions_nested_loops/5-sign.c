@@ -23,5 +23,6 @@ else
 putchar('-');
 return (-1);
 }
+}
 putchar('\n');
 }
