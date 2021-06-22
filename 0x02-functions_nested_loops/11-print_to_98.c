@@ -9,7 +9,7 @@ void print_to_98(int c)
 {
 if (c < 98)
 {
-for (c = c; n < 98; c++)
+for (c = c; c < 98; c++)
 printf("%d, ", c);
 printf("%d\n", 98);
 }
