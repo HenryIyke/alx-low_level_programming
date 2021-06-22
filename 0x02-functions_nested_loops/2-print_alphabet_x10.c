@@ -18,6 +18,5 @@ _putchar(ch);
 }
 _putchar('\n');
 }
-return (0);
 }
 
