@@ -7,15 +7,21 @@
  */
 int main(void)
 {
-int n, next_term, t1 = 0, t2 = 1;
-next_term = t1 + t2;
-printf("%d, %d, \n", t1, t2);
-while (n <= 50)
+unsigned long count, x, y, z;
+x = 0;
+y = 1;
+for (count = 0; count < 50; count++)
 {
-printf("%d, ", next_term);
-t1 = t2;
-t2 = next_term;
-next_term = t1 + t2;
+z = x + y;
+x = y;
+y = z;
+printf("%lu", z);
+if (count == 49)
+putchar('\n');
+else
+{
+printf(", ");
+}
 }
 return (0);
 }
