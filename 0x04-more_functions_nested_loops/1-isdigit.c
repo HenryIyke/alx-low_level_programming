@@ -2,13 +2,13 @@
 #include "holberton.h"
 
 /**
- * _isupper - check the code for uppercase
+ * _isdigit - check the code for digits
  *@c: parameter the int will use to check for the argument of the function
  * Return: Always 0.
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
-if (c >= 'A' &&  c <= 'Z')
+if (c >= '0' &&  c <= '9')
 {
 return (1);
 }
