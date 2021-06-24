@@ -18,7 +18,7 @@ _putchar('\n');
 
 for (i = 0; i <= (size - 1); i++)
 {
-for (j = i; j < size; j++)
+for (j = i; j < (size -1); j++)
 {
 _putchar(' ');
 }
