@@ -9,19 +9,22 @@
 int main(void)
 {
 int c;
+char f[] = "Fizz";
+char b[] = "Buzz";
+char fb[] = "FizzBuzz";
 for (c = 1; c <= 100; c++)
 {
 if (c % 3 == 0 && c % 5 == 0)
 {
-printf("FizzBuzz ");
+printf("%s ", fb);
 }
 else if (c % 3 == 0)
 {
-printf("Fizz ");
+printf("%s ", f);
 }
 else if (c % 5 == 0)
 {
-printf("Buzz ");
+printf("%s ", b);
 }
 else
 printf("%d ", c);
