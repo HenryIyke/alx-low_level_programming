@@ -1,14 +1,13 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - code to print for digits
- * @n: Int for argument of the function
- * Return: Always 0.
+ * print_diagonal -  a function that draws a diagonal line on the terminal
+ * @n: input number of times '\' should be printed
+ * Return: a diagonal
  */
 void print_diagonal(int n)
 {
-int i;
-int j;
+int i, j;
 
 if (n <= 0)
 {
@@ -18,7 +17,7 @@ else
 {
 for (i = 1; i <= n; i++)
 {
-for (j = 1; j <= i; j++)
+for (j = 1; j < i; j++)
 {
 _putchar(' ');
 }
