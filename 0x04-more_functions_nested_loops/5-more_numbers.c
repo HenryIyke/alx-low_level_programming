@@ -17,11 +17,11 @@ while (c <= 14)
 {
 if (c > 9)
 {
-putchar(c / 10 + '0');
-putchar(c % 10 + '0');
+_putchar(c / 10 + '0');
+_putchar(c % 10 + '0');
 c++;
 }
 }
 }
-putchar('\n');
+_putchar('\n');
 }
