@@ -26,5 +26,6 @@ printf("Buzz ");
 else
 printf("%d ", c);
 }
+printf("\n");
 return (0);
 }
