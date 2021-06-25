@@ -6,31 +6,21 @@
 
 void print_number(int n)
 {
-long len, r, i, temp, expo;
+int divisor;
+char digit, significant_zero = 0;
 
-r = n;
-expo = len =  1;
-/*To check for negatives*/
-if (r < 0)
-{
-r *= -1;
+if (n < 0)
 _putchar('-');
-}
 
-temp = r;
-while (temp >= 10)
+for (divisor = 1000000000; divisor != 0; divisor /= 10)
 {
-len++;
-temp /= 10;
-}
-/* To create exponent*/
-for (i = 1; i < len; i++)
-expo *= 10;
+digit = n / divisor;
+digit = digit < 0 ? -digit : digit;
+n %= divisor;
 
-while (expo > 1)
-{
-_putchar((r / expo) % 10 + '0');
-expo /= 10;
+if (!digit && !significant_zero && divisor != 1)
+continue;
+significant_zero = significant_zero || digit != 0;
+_putchar(digit + '0');
 }
-_putchar(r % 10 + '0');
 }
