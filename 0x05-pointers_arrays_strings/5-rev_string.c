@@ -17,7 +17,7 @@ for (c = '\0'; s[c] != 0; c++)
 s = 0;
 for (c = c - 1; r < c; s++)
 {
-character = s[c];
+ch = s[c];
 s[c] = s[r];
 s[r] = ch;
 c--;
