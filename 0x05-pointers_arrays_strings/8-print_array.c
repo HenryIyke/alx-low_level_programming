@@ -10,17 +10,18 @@
 void print_array(int *a, int n)
 {
 int i;
+char l = *a
 if (n > 0)
 {
 for (i = 0; i < n; i++)
 {
 if (i == (n - 1))
 {
-printf("%p", *a[i]);
+printf("%p", *l[i]);
 }
 else
 {
-printf("%p, " *a[i]);
+printf("%p, " *l[i]);
 }
 }
 }
