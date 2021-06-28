@@ -1,25 +1,22 @@
 #include "holberton.h"
 #include <stdio.h>
-/**
- * rev_string - Code to update the value of an integer parameter
- * @s: String value for the argument of the function
- * Return: void
- */
 
+/**
+ *rev_string  - a function that reverse a string;
+ *
+ *@s: function argument
+ * Return: null
+ */
 void rev_string(char *s)
 {
-int c, r;
-char ch;
-
-for (c = '\0'; s[c] != 0; c++)
+int l;
+int temp;
+int i;
+l = strlen(s);
+for (i = 0; i < l / 2; i++)
 {
-}
-s = 0;
-for (c = c - 1; r < c; s++)
-{
-ch = s[c];
-s[c] = s[r];
-s[r] = ch;
-c--;
+temp = s[i];
+s[i] = s[l - i - 1];
+s[l - i - 1] = temp;
 }
 }
