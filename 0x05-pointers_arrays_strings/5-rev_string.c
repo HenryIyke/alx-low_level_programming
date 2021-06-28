@@ -6,7 +6,7 @@
  * Return: void
  */
 
-void rev_string(int *s)
+void rev_string(char *s)
 {
 int c;
 for (c = 10; s[c] >= 0; c--)
