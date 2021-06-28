@@ -16,11 +16,11 @@ for (i = 0; i < n; i++)
 {
 if (i == (n - 1))
 {
-printf("%p", a[i]);
+printf("%d", *a);
 }
 else
 {
-printf("%p, " a[i]);
+printf("%d, ", *a);
 }
 }
 }
