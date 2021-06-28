@@ -1,0 +1,1 @@
+**This directory contains codes on Arrays and Pointers in the C programming language**
