@@ -10,7 +10,7 @@
 void print_array(int *a, int n)
 {
 int i;
-*a = l[n];
+int l[n] = *a;
 for (i = 0; i < n; i++)
 {
 if (i == (n - 1))
