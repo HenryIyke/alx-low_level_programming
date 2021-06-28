@@ -8,9 +8,9 @@
 
 void _puts(char *str)
 {
-char c[100] = *str;
-for (c = 0; c <= _strlen; c++)
+int c;
+for (c = 0; str[c] != 0; c++)
 {
-_puts(c);
+  _puts(str[c]);
 }
 }
