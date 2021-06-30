@@ -21,6 +21,5 @@ for (j = 0; dest[j] != '\0'; j++, ++length)
 src[length] = dest[j];
 }
 src[length] = '\0';
-_putchar(*src);
-return (0);
+return (dest);
 }
