@@ -1,0 +1,1 @@
+**This directory contains more codes on C pointers, strings and arrays**
