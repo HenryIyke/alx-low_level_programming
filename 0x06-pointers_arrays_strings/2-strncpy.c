@@ -23,7 +23,7 @@ if (src[a] == '\0')
 break;
 }
 }
-while (a != n)
+while (b != n)
 dest[b++] = '\0';
 return (dest);
 }
