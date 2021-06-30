@@ -27,5 +27,6 @@ while (b < n)
 {
 dest[b] = '\0';
 b++;
+}
 return (dest);
 }
