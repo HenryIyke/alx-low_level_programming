@@ -2,23 +2,24 @@
 #include <stdio.h>
 /**
  * string_toupper - Code to return upper cases of a lowercase array
- * @str: int value for the argument of the function
- * int value for the argument of the function
+ *
+ *
  *
  * Return: 0
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *)
 {
 int i = 0;
-
-while (str[1] != '\0')
+ char src;
+ char dest;
+while (src[1] != '\0')
 {
-if (str[i] >= 'a' && str[i] <= 'z')
+if (src[i] >= 'a' && src[i] <= 'z')
 {
-str[i] = str[i] - 32;
+dest[i] = src[i] - 32;
 }
 i++;
 }
-return (0);
+return (dest);
 }
