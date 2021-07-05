@@ -3,6 +3,7 @@
 /**
  * _strchr - Check for first occurrence of c
  * @c: character to replace
+ * @s: Array
  * Return: pointer to s
  */
 
@@ -19,4 +20,3 @@ return (s);
 else
 return ('\0');
 }
- 
