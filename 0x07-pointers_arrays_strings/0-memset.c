@@ -1,12 +1,10 @@
 #include "holberton.h"
 
 /**
- * infinite_add - adds two numbers
+ * _memset - add n byte of b to array
  * @s: Array
  * @b: character to replace
  * @n: number of bytes to replace
- * 
- *
  * Return: pointer to s
  */
 
