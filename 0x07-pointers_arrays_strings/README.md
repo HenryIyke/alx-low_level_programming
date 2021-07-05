@@ -1,0 +1,1 @@
+*This directory contains codes on pointer to pointer and multi dimentional arrays in C programming language*
