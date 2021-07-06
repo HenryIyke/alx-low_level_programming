@@ -2,7 +2,7 @@
 #define HOLBERTON_H
 
 void _puts_recursion(char *s);
-void _putchar(char*);
+int _putchar(char*);
 
 
 #endif /* HOLBERTON_H */
