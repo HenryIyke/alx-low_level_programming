@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * _puts_recursion - prints a string
- * @s: String argument
+ * _sqrt_recursion - prints the square root of a number
+ * @n: String argument
  *
  *
- * Return: pointer to s
+ * Return: square root value
  */
 
 int _sqrt_recursion(int n)
