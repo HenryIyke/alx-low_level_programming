@@ -1,4 +1,4 @@
-c/**
+/**
  * rot13 - encodes a string by rotating the characters 13 spaces.
  * @s: pointer to input string.
  * Return: Returns pointer encoded string.
