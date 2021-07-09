@@ -1,0 +1,1 @@
+**This directory contains codes for linking of static libraries in the C programming language**
