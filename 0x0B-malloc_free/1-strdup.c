@@ -20,7 +20,7 @@ while (str[i] != '\0')
 len++;
 i++;
 }
-arr = malloc(len * sizeof(str));
+arr = malloc(len * (sizeof(str)));
 if (arr == NULL)
 {
 return (NULL);
