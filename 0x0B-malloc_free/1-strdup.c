@@ -16,7 +16,7 @@ unsigned int i = 0;
 char *arr;
 
 arr = malloc(sizeof(str));
-if (str == NULL)
+if (arr == NULL)
 {
 return (NULL);
 }
