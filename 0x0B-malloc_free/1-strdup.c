@@ -20,8 +20,8 @@ while (str[i] != '\0')
 len++;
 i++;
 }
-arr = malloc(len * (sizeof(char)));
-if (arr == NULL)
+arr = malloc(len * (sizeof(char) + 1));
+if (str == NULL)
 {
 return (NULL);
 }
