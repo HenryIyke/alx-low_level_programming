@@ -14,7 +14,8 @@ char *_strdup(char *str)
 {
 int i = 0, len = 0;
 char *arr;
-
+if (str == NULL)
+return (NULL);
 while (str[i] != '\0')
 {
 len++;
@@ -26,10 +27,8 @@ if (arr == NULL)
 return (NULL);
 }
 i = 0;
-while (str[i] != '\0')
+while (i <= len)
 {
-if (str == NULL)
-return (0);
 arr[i] = str[i];
 i++;
 }
