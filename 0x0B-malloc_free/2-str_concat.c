@@ -12,7 +12,7 @@ int a, b, c;
 char *my_array;
 
 c = 0;
-my_array = malloc(sizeof(*s1 + *s2));
+my_array = malloc((sizeof(*s1 + *s2)) + 1);
 
 if (my_array == NULL)
 return (NULL);
