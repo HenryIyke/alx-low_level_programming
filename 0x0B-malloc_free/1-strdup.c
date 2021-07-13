@@ -25,6 +25,7 @@ if (arr == NULL)
 {
 return (NULL);
 }
+i = 0;
 while (str[i] != '\0')
 {
 arr[i] = str[i];
