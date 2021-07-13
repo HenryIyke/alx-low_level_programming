@@ -37,7 +37,7 @@ int i = 0, words = 0, len = 0;
 for (i = 0; *(str + i); i++)
 len++;
 
-for (index = 0; index < len; index++)
+for (i = 0; i < len; i++)
 {
 if (*(str + i) != ' ')
 {
