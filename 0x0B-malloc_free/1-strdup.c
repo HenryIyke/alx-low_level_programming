@@ -21,13 +21,15 @@ len++;
 i++;
 }
 arr = malloc((len * (sizeof(char))) + 1);
-if (arr == NULL && str == NULL)
+if (arr == NULL)
 {
 return (NULL);
 }
 i = 0;
 while (str[i] != '\0')
 {
+if (str == NULL)
+return (0);
 arr[i] = str[i];
 i++;
 }
