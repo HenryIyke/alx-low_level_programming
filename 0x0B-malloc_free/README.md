@@ -1,0 +1,1 @@
+**This directory contains codes on memory allocation and deallocation, using malloc and free, in the C programming language**
