@@ -28,7 +28,7 @@ while (s2[len2] != '\0')
 len2++;
 }
 len2++;
-s3 = malloc((len1 + len2) * sizeof(*s1));
+s3 = malloc((len1 + len2) *(sizeof(*s1)));
 if (s3 == NULL)
 return (NULL);
 i = 0;
