@@ -26,8 +26,7 @@ return (NULL);
 
 for (i = 0; i < size; i++)
 {
-arr[i] = min;
-min++;
+arr[i] = ++min;
 }
 
 return (arr);
