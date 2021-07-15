@@ -26,10 +26,11 @@ len2++;
 s3 = malloc(sizeof(char) * (len1 + 1));
 if (s3 == NULL)
 return (NULL);
+len1 = 0;
 for (i = 0; s1[i] != '\0'; i++)
-s3[i] = s1[i];
+s3[len1++] = s1[i];
 for (j = 0; s2[j] != '\0'; j++, i++)
-s3[i] = s2[j];
-s3[i] = '\0';
+s3[len1++] = s2[j];
+s3[len1] = '\0';
 return (s3);
 }
