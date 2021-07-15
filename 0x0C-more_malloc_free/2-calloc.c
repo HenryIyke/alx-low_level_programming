@@ -27,7 +27,7 @@ return (NULL);
 mem_tmp = mem;
 
 for (i = 0; i < (size * nmemb); i++)
-mem_tmp[i] = 0;
+mem[i] = 0;
 
 return (mem);
 }
