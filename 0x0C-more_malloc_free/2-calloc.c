@@ -24,7 +24,7 @@ if (!mem)
 return (NULL);
 
 for (i = 0; i < (size * nmemb); i++)
-mem[i] = '\0';
+mem[i] = 0;
 
 return (mem);
 }
