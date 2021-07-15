@@ -23,7 +23,7 @@ for (i = 0; s1[i] != '\0'; i++)
 len1++;
 for (j = 0; s2[j] != '\0'; j++)
 len2++;
-s3 = malloc((i + ((len1 * (sizeof(*s2))) + 1) * (sizeof(*s3)));
+s3 = malloc((i + ((len1 * (n * sizeof(*s2))) + 1) * (sizeof(*s3))));
 if (s3 == NULL)
 return (NULL);
 for (i = 0; s1[i] != '\0'; i++)
