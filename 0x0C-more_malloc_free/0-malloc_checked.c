@@ -9,7 +9,7 @@
  * Return: Pointer to array
  */
 
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 void* ptr;
 ptr = malloc(b);
