@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -21,7 +22,7 @@ size = (max - min) + 1;
 
 arr = malloc(sizeof(int) * size);
 
-if (!arr)
+if (arr == NULL)
 return (NULL);
 
 for (i = 0; i < size; i++)
