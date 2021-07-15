@@ -23,13 +23,13 @@ for (i = 0; s1[i] != '\0'; i++)
 len1++;
 for (j = 0; s2[j] != '\0'; j++)
 len2++;
-s3 = malloc((i + ((len1 * (n * sizeof(*s2))) + 1) * (sizeof(*s3))));
+ s3 = malloc(sizeof(char) * (len1 + 1));
 if (s3 == NULL)
 return (NULL);
 for (i = 0; s1[i] != '\0'; i++)
 s3[i] = s1[i];
 for (j = 0; s2[j] != '\0'; j++, i++)
 s3[i] = s2[j];
-s3[i + 1] = '\0';
+s3[i] = '\0';
 return (s3);
 }
