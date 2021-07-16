@@ -47,7 +47,7 @@ for (i = len_2 - 1; i >= 0; i--)
 for (j = len_1 - 1; j >= 0; j--)
 {
 dig_1 = s1[j] - '0', dig_2 = s2[i] - '0';
-temp_res = dig_1 * dig_2 + carry;
+temp_res = dig_1 * (dig_2) + carry;
 t2 = (temp_res + res[i + j + 1]);
 res[i + j + 1] = (t2 % 10), carry = t2 / 10;
 }
