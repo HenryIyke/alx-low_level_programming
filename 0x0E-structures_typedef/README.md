@@ -1,0 +1,1 @@
+**This directory contains codes on structures and typedef in the C programming language**
