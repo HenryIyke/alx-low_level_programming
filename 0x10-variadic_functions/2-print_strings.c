@@ -4,13 +4,13 @@
 #include <string.h>
 
 /**
- * print_string - Function that prints strings
+ * print_strings - Function that prints strings
  * @separator: String between strings
  * @n: number of strings
  *
  */
 
-void print_string(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	
 	unsigned int i;
