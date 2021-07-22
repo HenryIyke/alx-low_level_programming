@@ -1,16 +1,13 @@
 section .text
-   global main
+	global main
 
 main:
-   mov edx,len
-   mov ecx,msg
-   mov ebx,1
-   mov eax,4
-   int 0x80
-
-   mov eax,0
-   int 0x08
-
+	mov ebx,1
+	mov ecx,msg
+	mov edx,17
+	mov eax,4
+	int 0x80
+	mov eax,0
+	int 0x08
 section .data
-   msg: db 'Hello, Holberton', 0xa
-   len: equ $ - msg
+	msg db 'Hello, Holberton',0xa
