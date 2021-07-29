@@ -5,7 +5,7 @@
 #include <stddef.h>
 
 /**
- * add node - Adds a node to the beginning of the linked list
+ * add_node - Adds a node to the beginning of the linked list
  * @head: First node
  * @str: New node data
  *
@@ -32,7 +32,7 @@ list_t *add_node(list_t **head, const char *str)
 				return (NULL);
 			}
 
-			for (len = 0; s[len] != '\0'; len++)
+			for (len = 0; str[len] != '\0'; len++)
 				s[len] = str[len];
 			s[len] = '\0';
 			new_node->str = s;
