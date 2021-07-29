@@ -17,18 +17,17 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *new_node;
 	list_t *last;
 
-	for (len = 0, str && str[len] != '\0'; len++)
+	for (len = 0; str && str[len] != '\0'; len++)
 		;
-	last = last ? *head : NULL;
-	while (last->next != NULL)
+	last = head ? *head : NULL;
+	while (last && last->next != NULL)
 		last = last->next;
 
 	new_node = malloc(sizeof(list_t));
-	
 	if (new_node != NULL)
 	{
 		s = malloc(sizeof(char) * (len + 1));
-		if(!s)
+		if (!s)
 			free(new_node);
 		for (len = 0; str[len] != '\0'; len++)
 			s[len] = str[len];

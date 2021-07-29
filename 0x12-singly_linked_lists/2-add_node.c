@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+#include <string.h>
+#include <stddef.h>
 
 /**
  * add node - Adds a node to the beginning of the linked list
@@ -16,12 +18,12 @@ list_t *add_node(list_t **head, const char *str)
 	char *s;
 	list_t *new_node;
 
-	for (len = 0, str & str[len] != '\0'; len++)
+	for (len = 0; str && str[len] != '\0'; len++)
 		;
-	if (head != NULL)
+	if (head)
 	{
 		new_node = malloc(sizeof(list_t));
-		if (new_node != NULL)
+		if (new_node)
 		{
 			s = malloc(sizeof(char) * (len + 1));
 			if (!s)
@@ -30,7 +32,7 @@ list_t *add_node(list_t **head, const char *str)
 				return (NULL);
 			}
 
-			for (len = 0, s[len] != '\0'; len++)
+			for (len = 0; s[len] != '\0'; len++)
 				s[len] = str[len];
 			s[len] = '\0';
 			new_node->str = s;
