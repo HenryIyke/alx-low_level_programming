@@ -16,10 +16,10 @@ int pop_listint(listint_t **head)
 
 	if (head && *head)
 	{
-		node = *head;
-		data = node->n;
+		prev = *head;
+		data = prev->n;
 		*head = (*head)->next;
-		free(node);
+		free(prev);
 	}
-	return (val);
+	return (data);
 }
