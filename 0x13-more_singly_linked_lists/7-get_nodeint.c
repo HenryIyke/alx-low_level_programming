@@ -13,7 +13,7 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	int count = 0;
-	listint_t *current = head
+	listint_t *current = head;
 
 	if (current)
 	{
@@ -21,6 +21,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		{
 			if (count == index)
 				return (current);
+			count++;
 			current = current->next;
 		}
 	}
