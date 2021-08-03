@@ -34,7 +34,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			free(ptr);
 			return (new_ptr);
 		}
-		free(ptr)
+		free(ptr);
 		return (NULL);
 	}
 	else
@@ -173,7 +173,7 @@ size_t print_listint_safe(const listint_t *head)
 				exit(98);
 		}
 		if (nodes_addr != NULL)
-			free(node_addr);
+			free(nodes_addr);
 	}
 	return (i);
 }
