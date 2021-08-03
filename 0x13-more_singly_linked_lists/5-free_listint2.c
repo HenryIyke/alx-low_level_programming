@@ -23,12 +23,12 @@ void free_listint2_head(listint_t *head)
  *
  */
 
-void free_listint2(listint_t **head);
+void free_listint2(listint_t **head)
 {
 	if (head)
 	{
-		if (*head->next)
-			free_listint2((*head)->next);
+		if ((*head)->next)
+			free_listint2_head((*head)->next);
 		free(*head);
 		*head = NULL;
 	}
