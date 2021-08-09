@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <stdlib.h>
 
 /**
  * create_file - Creates a file
@@ -22,9 +27,9 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		for (i = 0; text_content[i] != '\0'; i++)
+		for (x = 0; text_content[x] != '\0'; x++)
 			;
-		rcheck = write(fd, text_content, i);
+		rcheck = write(fd, text_content, x);
 		if (rcheck == -1)
 			return (-1);
 	}
