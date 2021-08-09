@@ -1,0 +1,1 @@
+**This directory contains codes on FileI/O (read, write, open and close), in the C programming language**
