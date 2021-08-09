@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 #include "main.h"
 #include <unistd.h>
 #include <sys/types.h>
@@ -7,7 +8,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - reads a text file and prints it to the POSIX 
+ * read_textfile - reads a text file and prints it to the POSIX
  *		standard output
  * @filename: Fie to be read and printed
  * @letters: bytes of letters we wants to print
