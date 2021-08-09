@@ -64,6 +64,7 @@ void close_fd(int fd)
  * copy_contents - Copies the contents from one file to another
  * @from_fd: The source file handle
  * @to_fd: The destination file handle
+ * @src_file: The source file
  * @dest_file: The destination file name
  */
 void copy_contents(int from_fd, int to_fd, char *src_file, char *dest_file)
