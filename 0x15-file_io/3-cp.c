@@ -33,13 +33,9 @@ int main(int argc, char *argv[])
 		close_fd(src_fd);
 		dprintf(SE, "Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
-	dest_fd = open(argv[2], O_WRONLY | O_TRUNC);
+	dest_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (dest_fd < 0)
-	{
-		dest_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-		if (dest_fd < 0)
-			dprintf(SE, "Error: Can't write to %s\n", argv[2]), exit(99);
-	}
+		dprintf(SE, "Error: Can't write to %s\n", argv[2]), exit(99);
 
 	file_copy(src_fd, dest_fd, argv[2]);
 	close_fd(src_fd), close_fd(dest_fd);
