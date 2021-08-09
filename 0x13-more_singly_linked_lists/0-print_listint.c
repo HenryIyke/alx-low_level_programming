@@ -12,6 +12,7 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t nodeCount = 0;
+
 	/*listint_t *ptr = h ? h->next : NULL;*/
 
 	while (h != NULL)
