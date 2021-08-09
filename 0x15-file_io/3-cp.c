@@ -24,15 +24,13 @@ void close_fd(int fd);
 int main(int argc, char *argv[])
 {
 	int src_fd, dest_fd;
-	mode_t mode;
 
-	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	if (argc != 3)
 		dprintf(SE, "Usage: cp file_from file_to\n"), exit(97);
 	src_fd = open(argv[1], O_RDONLY);
 	if (src_fd == -1)
 		dprintf(SE, "Error: Can't read from file %s\n", argv[1]), exit(98);
-	dest_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, mode);
+	dest_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (dest_fd == -1)
 		dprintf(SE, "Error: Can't write to %s\n", argv[2]), exit(99);
 
