@@ -86,14 +86,3 @@ This project contains tasks for learning about the use of a *Makefile* in develo
     + `NAME`: the name of the executable.
     + `RM`: the program to delete files.
     + `CFLAGS`: the compiler flags: `-Wall -Werror -Wextra -pedantic`.
-  + The `all` rule should recompile only the updated source files.
-  + The `clean`, `oclean`, `fclean`, `re` rules should never fail.
-  + A list of all the `.o` files should not be present in the Makefile.
-  + The string `$(RM)` has to be used for the cleaning up rules, but the `RM` variable should not be set.
-  + The string `$(CC)` cannot be used more than once in the Makefile.
-  + The string `$(RM)` can only be used twice in the Makefile.
-  + The string `$(CFLAGS)` should not be used (but the compiler should still use the flags that were set in this variable).
-  + Any `$(OBJ)` rule is not allowed.
-  + The `%.o: %.c` rule is not allowed.
-  + The Makefile should work even if there is a file in the folder that has the same name as one of the rules.
-  + The Makefile should not compile if the header file `m.h` is missing.
